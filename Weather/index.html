@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Weather icons & general symbols -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      integrity="sha512-...your-integrity..."
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- Weather_State -->
+    <input type="radio" id="sun" name="state" checked />
+    <input type="radio" id="cloud" name="state" />
+    <input type="radio" id="rain" name="state" />
+    <input type="radio" id="snow" name="state" />
+
+    <div class="weather-app app">
+      <!-- lft_card-->
+      <section class="scene">
+        <div class="sky">
+          <div class="sun"></div>
+          <div class="cloud cloud-1"></div>
+          <div class="cloud cloud-2"></div>
+          <div class="rain">
+            <div class="drop"></div>
+            <div class="drop"></div>
+            <div class="drop"></div>
+            <div class="drop"></div>
+            <div class="drop"></div>
+            <div class="drop"></div>
+          </div>
+          <div class="snow">
+            <div class="flake"></div>
+            <div class="flake"></div>
+            <div class="flake"></div>
+            <div class="flake"></div>
+            <div class="flake"></div>
+            <div class="flake"></div>
+          </div>
+          <div class="lightning"></div>
+        </div>
+        <div class="ground"></div>
+
+        <div class="details-overlay" id="extraDetails">
+          Feels Like: --°C<br />
+          Pressure: -- hPa<br />
+          Sunrise: --:--<br />
+          Sunset: --:--
+        </div>
+
+        <div class="extras"></div>
+      </section>
+
+      <!-- Rgt_card -->
+      <aside class="card">
+        <div class="top-row">
+          <div>
+            <div class="location" id="location">City, Country</div>
+            <div class="small" id="date"></div>
+          </div>
+          <div class="controls">
+            <form id="searchForm">
+              <input
+                type="text"
+                id="cityInput"
+                placeholder="Search city"
+                required
+                style="
+                  padding: 6px 10px;
+                  border-radius: 8px;
+                  border: none;
+                  outline: none;
+                  margin-bottom: 5px;
+                "
+              />
+
+              <button
+                type="submit"
+                style="
+                  padding: 6px 10px;
+                  border-radius: 8px;
+                  border: none;
+                  background: #ffd166;
+                  cursor: pointer;
+                "
+              >
+                Go
+              </button>
+            </form>
+          </div>
+        </div>
+
+        <div class="temp">
+          <div>
+            <div class="big" id="temperature">--</div>
+            <div class="unit">°C</div>
+          </div>
+          <div>
+            <div class="desc" id="description">--</div>
+            <div class="small" id="extra">--</div>
+          </div>
+        </div>
+
+        <div class="stats">
+          <div class="stat">
+            <b>Humidity</b>
+            <div id="humidity">--%</div>
+          </div>
+          <div class="stat">
+            <b>Wind</b>
+            <div id="wind">-- km/h</div>
+          </div>
+        </div>
+      </aside>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
