@@ -1,4 +1,5 @@
 ⛅ Animated Weather App
+
 The Animated Weather App is a fully responsive, single-page web application that delivers real-time weather information paired with engaging, dynamic animations. Designed with simplicity and performance in mind, it provides an immersive way to check the weather forecast without relying on heavy frameworks or external UI libraries. Just search your city and instantly get accurate, visually appealing weather updates.
 
 🚀 Features
